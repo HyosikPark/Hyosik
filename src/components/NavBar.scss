@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&display=swap');
+.nav-container {
+  font-weight: 900;
+  font-size: 1.1rem;
+  position: sticky;
+  height: 60px;
+  z-index: 999;
+  display: flex;
+  .logo {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Pacifico', cursive;
+    h1 {
+      cursor: pointer;
+      padding: 1rem 2rem;
+      font-weight: 100;
+      color: rgb(48, 50, 75);
+    }
+  }
+  .nav-list {
+    position: absolute;
+    right: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Architects Daughter', cursive;
+    width: calc(100vw - 40%);
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin: 1rem auto;
+      padding: 1rem 1rem;
+      cursor: pointer;
+      align-self: center;
+      &.contact {
+        margin-right: 5%;
+        .balloon {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          top: 15%;
+          opacity: 1;
+          cursor: default;
+        }
+      }
+      &.about {
+        position: relative;
+        .red-circle {
+          position: absolute;
+          top: 4px;
+          left: -24px;
+          width: 120px;
+          height: 50px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
