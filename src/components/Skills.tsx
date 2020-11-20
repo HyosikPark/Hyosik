@@ -1,7 +1,8 @@
 import React from 'react';
+import './Skills.scss';
 
 const Skills = () => {
-  return <div></div>;
+  return <div className='skills-container'>ok</div>;
 };
 
 export default Skills;

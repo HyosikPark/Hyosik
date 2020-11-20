@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&display=swap');
+@import './mediaquery/MediaQuery';
+
 .profile-cover {
   width: 100vw;
   height: 100vh;
@@ -10,116 +12,131 @@
     rgb(124, 108, 117) 40%,
     rgb(250, 249, 249) 35%
   );
-}
-.profile-container {
-  margin-top: 60px;
-  width: 100vw;
-  height: calc(100vh - 60px);
-  display: grid;
-  grid-template-rows: 1fr 5fr 1fr;
-  grid-template-columns: 40% 5fr 1fr;
-  grid-template-areas:
-    'top1 top2 top3' 'middle1 middle2 middle3'
-    'bottom1 bottom2 bottom3';
-  .profile-img {
-    grid-area: middle1;
-    position: relative;
-    img {
-      position: absolute;
-      box-shadow: 12px 14px 19px 0px rgba(0, 0, 0, 0.38);
-      right: 20%;
-      width: auto;
-      height: auto;
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 1%;
-    }
-  }
-  .info-head {
-    grid-area: middle2;
-    position: relative;
-    .info-about {
-      color: rgb(100, 100, 96);
-
-      position: absolute;
-      left: 6%;
-      .about-me {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        margin-bottom: 7%;
+  .profile-container {
+    margin-top: 60px;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 40% 5fr 1fr;
+    grid-template-areas:
+      'top1 top2 top3' 'middle1 middle2 middle3'
+      'bottom1 bottom2 bottom3';
+    .profile-img {
+      grid-area: middle1;
+      position: relative;
+      img {
+        position: absolute;
+        box-shadow: 12px 14px 19px 0px rgba(0, 0, 0, 0.38);
+        right: 20%;
+        width: auto;
+        height: auto;
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 1%;
       }
-      .who-am-i {
-        font-size: 1.8rem;
-        color: rgb(76, 111, 165);
-        span {
-          letter-spacing: 4px;
+    }
+    .info-head {
+      grid-area: middle2;
+      position: relative;
+      font-size: 1rem;
+      .info-about {
+        color: rgb(100, 100, 96);
+        position: absolute;
+        left: 6%;
+        .about-me {
+          font-size: 1.5em;
+          letter-spacing: 2px;
+          margin-bottom: 7%;
+        }
+        .who-am-i {
+          font-size: 1.8em;
+          color: rgb(76, 111, 165);
+          span {
+            letter-spacing: 4px;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        top: -2%;
+        right: 10%;
+        width: 100px;
+        height: 120px;
+        z-index: 0;
+        @include tablet {
+          width: 80px;
+          height: 100px;
         }
       }
     }
-    img {
-      position: absolute;
-      top: -2%;
-      right: 10%;
-      width: 100px;
-      height: 120px;
-    }
-  }
-  .info-text {
-    color: rgb(49, 44, 44);
-    grid-area: middle2;
-    position: relative;
-    .introduce {
-      position: absolute;
-      top: 25%;
-      right: 0;
-      width: 80%;
-      p {
-        margin-top: 5%;
-        text-align: justify;
-        font-size: 1.05rem;
-        line-height: 1.5rem;
-        font-weight: 500;
+    .info-text {
+      color: rgb(49, 44, 44);
+      grid-area: middle2;
+      position: relative;
+      font-size: 1rem;
+      @include desktop {
+        font-size: 0.9rem;
       }
-    }
-  }
-  .site-info {
-    font-family: 'Anton', sans-serif;
-    font-family: 'Architects Daughter', cursive;
-    grid-area: bottom2;
-    position: relative;
-    .tech-site {
-      color: rgb(48, 48, 46);
-      position: absolute;
-      right: 0%;
-      bottom: 10%;
-      font-size: 0.7rem;
-      .tech-blog {
-        .water-drop1 {
-          position: absolute;
-          left: -23%;
-          top: -15%;
-          width: 15px;
-          height: 15px;
-          transform: rotate(90deg);
-        }
-        .water-drop2 {
-          position: absolute;
-          left: -10%;
-          top: -30%;
-          width: 15px;
-          height: 15px;
-          transform: rotate(140deg);
-        }
-      }
-      a {
-        color: rgba(31, 97, 45, 0.747);
-        text-decoration: underline;
+      @include tablet {
+        font-size: 0.8rem;
       }
 
-      i {
-        font-size: 24px;
-        margin-right: 5px;
-        color: rgb(48, 43, 43);
+      .introduce {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        width: 80%;
+        p {
+          margin-top: 5%;
+          text-align: justify;
+          font-size: 1.05em;
+          line-height: 1.5em;
+          font-weight: 500;
+        }
+      }
+    }
+    .site-info {
+      font-family: 'Anton', sans-serif;
+      font-family: 'Architects Daughter', cursive;
+      grid-area: bottom2;
+      position: relative;
+      .tech-site {
+        color: rgb(48, 48, 46);
+        position: absolute;
+        right: 0%;
+        bottom: 10%;
+        font-size: 0.7rem;
+        @include tablet {
+          font-size: 0.5rem;
+        }
+        .tech-blog {
+          .water-drop1 {
+            position: absolute;
+            left: -23%;
+            top: -15%;
+            width: 15px;
+            height: 15px;
+            transform: rotate(90deg);
+          }
+          .water-drop2 {
+            position: absolute;
+            left: -10%;
+            top: -30%;
+            width: 15px;
+            height: 15px;
+            transform: rotate(140deg);
+          }
+        }
+        a {
+          color: rgba(31, 97, 45, 0.747);
+          text-decoration: underline;
+        }
+        i {
+          font-size: 24px;
+          margin-right: 5px;
+          color: rgb(48, 43, 43);
+        }
       }
     }
   }

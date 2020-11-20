@@ -1,0 +1,11 @@
+.skills-container {
+  margin-top: calc(100vh - 60px);
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  overflow: hidden;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: 'top1 top2 top3' 'middle1 middle2 middle3'
+    'bottom1 bottom2 bottom3';
+}
