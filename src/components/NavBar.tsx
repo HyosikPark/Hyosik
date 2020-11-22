@@ -4,6 +4,24 @@ import './NavBar.scss';
 const NavBar = () => {
   const [sideBar, setSideBar] = useState(false);
   const [changeClassName, setChangeClassName] = useState(false);
+  const [Circle, setCircle] = useState({
+    home: false,
+    about: true,
+    skills: false,
+    project: false,
+    contact: false,
+  });
+
+  const displayCircle = useCallback((e) => {
+    setCircle({
+      home: false,
+      about: false,
+      skills: false,
+      project: false,
+      contact: false,
+      [e.target.className]: true,
+    });
+  }, []);
 
   const toggleSideBar = useCallback(() => {
     setSideBar((prev) => !prev);
@@ -40,17 +58,37 @@ const NavBar = () => {
         className={changeClassName ? 'sidebar' : 'nav-list'}
         style={sideBar ? { height: '40vh' } : undefined}
       >
-        <li className='home'>Home</li>
-        <li className='about'>
+        <li className='home' onClick={displayCircle}>
+          Home
+          {Circle.home && (
+            <img className='red-circle' src='./img/red-circle.png' alt='' />
+          )}
+        </li>
+        <li className='about' onClick={displayCircle}>
           About
-          <img className='red-circle' src='./img/red-circle.png' alt='' />
+          {Circle.about && (
+            <img className='red-circle' src='./img/red-circle.png' alt='' />
+          )}
         </li>
-        <li className='skills'>Skills</li>
-        <li className='project'>Project</li>
-        <li className='contact'>
+        <li className='skills' onClick={displayCircle}>
+          Skills
+          {Circle.skills && (
+            <img className='red-circle' src='./img/red-circle.png' alt='' />
+          )}
+        </li>
+        <li className='project' onClick={displayCircle}>
+          Project
+          {Circle.project && (
+            <img className='red-circle' src='./img/red-circle.png' alt='' />
+          )}
+        </li>
+        <li className='contact' onClick={displayCircle}>
           Contact
-          <img className='balloon' src='./img/balloon.png' alt='' />
+          {Circle.contact && (
+            <img className='red-circle' src='./img/red-circle.png' alt='' />
+          )}
         </li>
+        <img className='balloon' src='./img/balloon.png' alt='' />
       </ul>
       <i
         onClick={toggleSideBar}

@@ -39,7 +39,15 @@
     height: 60px;
     display: flex;
     justify-content: flex-end;
-
+    .balloon {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 15%;
+      right: 1%;
+      opacity: 1;
+      cursor: default;
+    }
     @include tablet {
       display: none;
     }
@@ -67,6 +75,7 @@
       align-items: center;
       margin: 0;
       width: 100%;
+
       &:hover {
         text-decoration: underline;
       }
@@ -87,15 +96,15 @@
     &:hover {
       text-decoration: underline;
     }
-    &.contact {
-      margin-right: 5%;
-      .balloon {
+    &.home {
+      position: relative;
+      .red-circle {
         position: absolute;
-        width: 40px;
-        height: 40px;
-        top: 15%;
-        opacity: 1;
-        cursor: default;
+        top: 4px;
+        left: -24px;
+        width: 120px;
+        height: 50px;
+        z-index: -1;
       }
     }
     &.about {
@@ -104,6 +113,40 @@
         position: absolute;
         top: 4px;
         left: -24px;
+        width: 120px;
+        height: 50px;
+        z-index: -1;
+      }
+    }
+    &.skills {
+      position: relative;
+      .red-circle {
+        position: absolute;
+        top: 4px;
+        left: -24px;
+        width: 120px;
+        height: 50px;
+        z-index: -1;
+      }
+    }
+    &.project {
+      position: relative;
+      .red-circle {
+        position: absolute;
+        top: 4px;
+        left: -18px;
+        width: 120px;
+        height: 50px;
+        z-index: -1;
+      }
+    }
+    &.contact {
+      position: relative;
+      margin-right: 5%;
+      .red-circle {
+        position: absolute;
+        top: 4px;
+        left: -20px;
         width: 120px;
         height: 50px;
         z-index: -1;

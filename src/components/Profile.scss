@@ -55,6 +55,9 @@
         margin-left: 10%;
         position: static;
       }
+      @include mobile {
+        font-size: 0.8rem;
+      }
       .info-about {
         color: rgb(100, 100, 96);
         position: absolute;
@@ -89,6 +92,10 @@
           top: 20%;
           right: 25%;
         }
+        @include mobile {
+          width: 70px;
+          height: 80px;
+        }
       }
     }
     .info-text {
@@ -104,6 +111,9 @@
       }
       @include L-mobile {
         position: static;
+      }
+      @include mobile {
+        font-size: 0.7rem;
       }
 
       .introduce {
@@ -139,7 +149,11 @@
         @include tablet {
           font-size: 0.5rem;
         }
-        .tech-blog {
+        h1 {
+          transition: transform 0.5s;
+          &:hover {
+            transform: scale(1.2);
+          }
           .water-drop1 {
             position: absolute;
             left: -23%;
@@ -161,6 +175,7 @@
           color: rgba(31, 97, 45, 0.747);
           text-decoration: underline;
         }
+
         i {
           font-size: 24px;
           margin-right: 5px;
