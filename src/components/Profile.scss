@@ -12,6 +12,10 @@
     rgb(124, 108, 117) 40%,
     rgb(250, 249, 249) 35%
   );
+
+  @include L-mobile {
+    background: rgb(245, 239, 230);
+  }
   .profile-container {
     margin-top: 60px;
     width: 100vw;
@@ -34,16 +38,29 @@
         max-width: 90%;
         max-height: 90%;
         border-radius: 1%;
+        @include tablet {
+          top: 15%;
+        }
+        @include L-mobile {
+          display: none;
+        }
       }
     }
     .info-head {
       grid-area: middle2;
       position: relative;
       font-size: 1rem;
+      @include L-mobile {
+        grid-area: middle1;
+        margin-left: 10%;
+        position: static;
+      }
       .info-about {
         color: rgb(100, 100, 96);
         position: absolute;
         left: 6%;
+        z-index: 1;
+
         .about-me {
           font-size: 1.5em;
           letter-spacing: 2px;
@@ -68,6 +85,10 @@
           width: 80px;
           height: 100px;
         }
+        @include L-mobile {
+          top: 20%;
+          right: 25%;
+        }
       }
     }
     .info-text {
@@ -81,12 +102,20 @@
       @include tablet {
         font-size: 0.8rem;
       }
+      @include L-mobile {
+        position: static;
+      }
 
       .introduce {
         position: absolute;
         top: 25%;
         right: 0;
         width: 80%;
+        @include L-mobile {
+          top: 35%;
+          width: 60%;
+          right: 20%;
+        }
         p {
           margin-top: 5%;
           text-align: justify;

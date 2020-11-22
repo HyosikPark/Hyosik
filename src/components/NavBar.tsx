@@ -1,19 +1,45 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './NavBar.scss';
 
 const NavBar = () => {
   const [sideBar, setSideBar] = useState(false);
+  const [changeClassName, setChangeClassName] = useState(false);
 
-  const openSideBar = useCallback(() => {
+  const toggleSideBar = useCallback(() => {
     setSideBar((prev) => !prev);
   }, []);
+
+  const closeSideBar = useCallback(() => {
+    setSideBar(false);
+  }, []);
+
+  const changeToNavBar = useCallback(() => {
+    if (window.innerWidth >= 768) {
+      setSideBar(false);
+    }
+    if (window.innerWidth < 768) {
+      setChangeClassName(true);
+    } else {
+      setChangeClassName(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    changeToNavBar();
+  }, [changeToNavBar]);
+
+  window.addEventListener('resize', changeToNavBar);
 
   return (
     <nav className='nav-container'>
       <div className='logo'>
         <h1>Hyosik.P</h1>
       </div>
-      <ul className={sideBar ? 'nav-list sidebar' : 'nav-list'}>
+      <ul
+        onClick={closeSideBar}
+        className={changeClassName ? 'sidebar' : 'nav-list'}
+        style={sideBar ? { height: '40vh' } : undefined}
+      >
         <li className='home'>Home</li>
         <li className='about'>
           About
@@ -27,11 +53,11 @@ const NavBar = () => {
         </li>
       </ul>
       <i
-        onClick={openSideBar}
+        onClick={toggleSideBar}
         className={sideBar ? 'fas fa-times' : 'fas fa-bars'}
       ></i>
     </nav>
   );
 };
 
-export default NavBar;
+export default React.memo(NavBar);

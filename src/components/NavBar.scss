@@ -39,57 +39,74 @@
     height: 60px;
     display: flex;
     justify-content: flex-end;
+
     @include tablet {
       display: none;
     }
+  }
 
-    &.sidebar {
-      background-color: rgb(237, 245, 164);
-      position: absolute;
-      right: 0;
-      margin-top: 60px;
-      width: 30vw;
-      height: 40vh;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        width: 100%;
-        img {
-          display: none;
-        }
-      }
-    }
+  .sidebar {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Architects Daughter', cursive;
+    background-color: rgb(159, 190, 211);
+    border-radius: 3%;
+    position: absolute;
+    right: 0;
+    margin-top: 60px;
+    height: 0;
+    width: 30vw;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    transition: height 0.5s;
 
     li {
-      margin: 1rem auto;
-      padding: 1rem 1rem;
-      cursor: pointer;
-      align-self: center;
-      &.contact {
-        margin-right: 5%;
-        .balloon {
-          position: absolute;
-          width: 40px;
-          height: 40px;
-          top: 15%;
-          opacity: 1;
-          cursor: default;
-        }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      width: 100%;
+      &:hover {
+        text-decoration: underline;
       }
-      &.about {
-        position: relative;
-        .red-circle {
-          position: absolute;
-          top: 4px;
-          left: -24px;
-          width: 120px;
-          height: 50px;
-          z-index: -1;
-        }
+      &.contact {
+        margin: 0;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+
+  li {
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    align-self: center;
+    &:hover {
+      text-decoration: underline;
+    }
+    &.contact {
+      margin-right: 5%;
+      .balloon {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 15%;
+        opacity: 1;
+        cursor: default;
+      }
+    }
+    &.about {
+      position: relative;
+      .red-circle {
+        position: absolute;
+        top: 4px;
+        left: -24px;
+        width: 120px;
+        height: 50px;
+        z-index: -1;
       }
     }
   }
