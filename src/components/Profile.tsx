@@ -34,6 +34,7 @@ const Profile = () => {
               people. Please Contact Me!
             </p>
           </div>
+          <img className='drawing-man' src='./img/drawing-man.png' alt='' />
         </div>
         <div className='site-info'>
           <div className='tech-site'>

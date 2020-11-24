@@ -78,13 +78,14 @@
 
       &:hover {
         text-decoration: underline;
+        background-color: rgb(238, 231, 231);
       }
       &.contact {
         margin: 0;
       }
-      img {
-        display: none;
-      }
+    }
+    img {
+      display: none;
     }
   }
 

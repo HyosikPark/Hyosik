@@ -17,8 +17,8 @@
     background: rgb(245, 239, 230);
   }
   .profile-container {
+    position: relative;
     margin-top: 60px;
-    width: 100vw;
     height: calc(100vh - 60px);
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;
@@ -132,6 +132,19 @@
           font-size: 1.05em;
           line-height: 1.5em;
           font-weight: 500;
+        }
+      }
+      .drawing-man {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        z-index: 1;
+        left: 10%;
+        bottom: -15%;
+        opacity: 1;
+        @include L-mobile {
+          bottom: 5%;
+          opacity: 0.4;
         }
       }
     }
