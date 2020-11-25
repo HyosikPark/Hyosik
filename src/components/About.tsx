@@ -1,7 +1,7 @@
 import React from 'react';
-import './Profile.scss';
+import './About.scss';
 
-const Profile = () => {
+const About = () => {
   return (
     <div className='profile-cover'>
       <div className='profile-container'>
@@ -25,10 +25,10 @@ const Profile = () => {
               Hello, I majored in Nano Mechatronics engineering at Pusan
               National University. I became interested in programming by doing
               humanoid and self-driving car projects. I mainly develop websites
-              using React, TypeScript, Node JS GraphQL. I am studying to improve
-              the recyclability of code and to create a fast and stable website
-              through careful testing. The goal is to efficiently configure
-              logic on the front end and to design UI/UX creatively.
+              using React, TypeScript, Node JS and GraphQL. I am studying to
+              improve the recyclability of code and to create a fast and stable
+              website through careful testing. The goal is to efficiently
+              configure logic on the front end and to design UI/UX creatively.
               Furthermore, I want to be a full-stack developer who can handle
               the back-end areas well. I want to communicate and work with good
               people. Please Contact Me!
@@ -68,4 +68,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default About;
