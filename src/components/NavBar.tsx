@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom';
 import './NavBar.scss';
 
 const NavBar = () => {
+  const pathname = window.location.pathname;
+  console.log(pathname);
   const [sideBar, setSideBar] = useState(false);
   const [changeClassName, setChangeClassName] = useState(false);
   const [Circle, setCircle] = useState({
-    home: true,
-    about: false,
-    skills: false,
-    project: false,
-    contact: false,
+    home: pathname === '/home' ? true : false,
+    about: pathname === '/about' ? true : false,
+    skills: pathname === '/skills' ? true : false,
+    project: pathname === '/project' ? true : false,
+    contact: pathname === '/contact' ? true : false,
   });
 
   const displayCircle = useCallback((e) => {

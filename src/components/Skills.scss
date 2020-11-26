@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import './mediaquery/MediaQuery';
 
 .skills-container {
   position: relative;
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 30% auto;
+  grid-template-rows: 20% auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 'top1 top2 top3' 'middle middle middle';
-  background: rgb(248, 247, 233);
+  background: rgb(248, 250, 240);
+  -webkit-box-shadow: 0px -2px 3px 0px #000000;
+  box-shadow: 0px -2px 3px 0px #000000;
   .info-head {
     grid-area: top1;
     font-size: 0.9rem;
-    font-style: italic;
+    @include mobile {
+      font-size: 0.7rem;
+    }
     .info-skills {
-      font-family: 'Castoro', serif;
-      font-family: 'Playfair Display', serif;
       font-weight: bold;
-      top: 15%;
+      top: 5%;
       position: absolute;
       left: 6%;
       z-index: 1;
@@ -41,9 +44,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-end;
-    background: rgb(248, 247, 233);
     article {
-      box-shadow: 0px 6px 17px 4px rgba(44, 44, 44, 0.98);
       margin: 2%;
       width: 200px;
       height: 280px;
@@ -51,10 +52,39 @@
       margin-left: 5%;
       position: relative;
       border-radius: 1%;
+      display: flex;
+      justify-content: center;
+      border: black 5px double;
+      border-radius: 3%;
+      &.html {
+        box-shadow: 0px 5px 7px 0px #f50707;
+      }
+      &.sass {
+        box-shadow: 0px 5px 10px 0px #ff0080;
+      }
+      &.javascript {
+        box-shadow: 0px 5px 10px 0px #ffee00;
+      }
+      &.typescript {
+        box-shadow: 0px 5px 10px 0px #211edb;
+      }
+      &.react {
+        box-shadow: 0px 5px 10px 0px #04a3ff;
+      }
+      &.node {
+        box-shadow: 0px 5px 10px 0px #19ff04;
+      }
+      &.webpack {
+        box-shadow: 0px 5px 10px 0px #003a92;
+      }
+      &.git {
+        box-shadow: 0px 5px 10px 0px #920000;
+      }
       img {
         position: absolute;
-        width: 100%;
-        height: 35%;
+        top: 5%;
+        width: 30%;
+        height: 25%;
       }
       .content {
         font-family: 'Noto Serif', serif;
@@ -65,8 +95,18 @@
         left: 0;
         border-top: 2px solid rgb(110, 110, 110);
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        h1 {
+          margin-top: 5%;
+        }
+        h3 {
+          margin-top: 5%;
+        }
+        h4 {
+          margin-top: 2%;
+        }
       }
     }
   }
