@@ -1,0 +1,129 @@
+@import './mediaquery/MediaQuery';
+
+.project-cover {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../wallpaper3.jpg');
+
+  .project-container {
+    position: relative;
+    margin-top: 60px;
+    width: 100vw;
+    min-height: calc(100vh - 60px);
+    display: grid;
+    grid-template-rows: 20% auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'top1 top2 top3' 'middle middle middle';
+    .info-head {
+      grid-area: top1;
+      font-size: 0.9rem;
+      @include mobile {
+        font-size: 0.7rem;
+      }
+      .info-project {
+        font-weight: bold;
+        top: 5%;
+        position: absolute;
+        left: 6%;
+        z-index: 1;
+        .challenge {
+          font-size: 1.5em;
+          letter-spacing: 2px;
+          color: rgb(85, 85, 82);
+          margin-bottom: 20%;
+        }
+        .project {
+          font-size: 1.8em;
+          color: rgb(42, 101, 190);
+          letter-spacing: 2px;
+        }
+      }
+    }
+    .kind-of-project {
+      grid-area: middle;
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-start;
+      background: url('../wallpaper3.jpg');
+      article {
+        margin: 2%;
+        width: 320px;
+        height: 400px;
+        margin-bottom: 3%;
+        margin-left: 5%;
+        position: relative;
+        border-radius: 1%;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        border: rgb(95, 93, 93) 10px double;
+        border-radius: 3%;
+        transition: transform 0.5s;
+        overflow: hidden;
+        .link {
+          position: relative;
+          width: 100%;
+          height: 50%;
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: transform 0.2s;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+        .content {
+          height: 50%;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          .project-date {
+            width: 100%;
+            padding: 0.2rem 0;
+            border-bottom: 1px solid;
+            display: flex;
+            justify-content: center;
+            p {
+              font-weight: bold;
+              font-size: 0.9rem;
+              color: rgb(80, 78, 78);
+            }
+          }
+          .project-title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            h1 {
+              font-size: 1.2rem;
+              padding: 0.5rem 0;
+              color: rgb(62, 63, 62);
+            }
+          }
+
+          .stack-code {
+            width: 100%;
+            border-top: 1px solid;
+            p {
+              margin-left: 3%;
+              font-size: 0.95rem;
+              font-weight: 600;
+            }
+            .github {
+              border-radius: 10%;
+              color: rgb(158, 50, 122);
+            }
+          }
+        }
+      }
+    }
+  }
+}

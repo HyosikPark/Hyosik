@@ -4,11 +4,10 @@ import './NavBar.scss';
 
 const NavBar = () => {
   const pathname = window.location.pathname;
-  console.log(pathname);
   const [sideBar, setSideBar] = useState(false);
   const [changeClassName, setChangeClassName] = useState(false);
   const [Circle, setCircle] = useState({
-    home: pathname === '/home' ? true : false,
+    home: pathname === '/' ? true : false,
     about: pathname === '/about' ? true : false,
     skills: pathname === '/skills' ? true : false,
     project: pathname === '/project' ? true : false,
@@ -61,7 +60,7 @@ const NavBar = () => {
         className={changeClassName ? 'sidebar' : 'nav-list'}
         style={sideBar ? { height: '40vh' } : undefined}
       >
-        <Link to='/home'>
+        <Link to='/'>
           <li className='home' onClick={displayCircle}>
             Home
             {Circle.home && (
