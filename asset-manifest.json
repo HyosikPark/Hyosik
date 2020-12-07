@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Hyosik/static/css/main.5a1e663f.chunk.css",
-    "main.js": "/Hyosik/static/js/main.c4f01a98.chunk.js",
-    "main.js.map": "/Hyosik/static/js/main.c4f01a98.chunk.js.map",
+    "main.js": "/Hyosik/static/js/main.96a2e0ca.chunk.js",
+    "main.js.map": "/Hyosik/static/js/main.96a2e0ca.chunk.js.map",
     "runtime-main.js": "/Hyosik/static/js/runtime-main.a609423b.js",
     "runtime-main.js.map": "/Hyosik/static/js/runtime-main.a609423b.js.map",
     "static/js/2.bb9e86a9.chunk.js": "/Hyosik/static/js/2.bb9e86a9.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.a609423b.js",
     "static/js/2.bb9e86a9.chunk.js",
     "static/css/main.5a1e663f.chunk.css",
-    "static/js/main.c4f01a98.chunk.js"
+    "static/js/main.96a2e0ca.chunk.js"
   ]
 }
