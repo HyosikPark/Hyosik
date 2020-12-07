@@ -1,6 +1,7 @@
 @import './mediaquery/MediaQuery';
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .project-cover {
+  font-family: 'Roboto Slab', serif;
   position: absolute;
   top: 0;
   width: 100vw;
@@ -19,22 +20,31 @@
     .info-head {
       grid-area: top1;
       font-size: 0.9rem;
-      @include mobile {
-        font-size: 0.7rem;
-      }
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 10%;
+
       .info-project {
         font-weight: bold;
-        top: 5%;
-        position: absolute;
-        left: 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         z-index: 1;
         .challenge {
+          padding: 4px;
           font-size: 1.5em;
           letter-spacing: 2px;
           color: rgb(85, 85, 82);
           margin-bottom: 20%;
+          -webkit-box-shadow: 2px 2px 3px 2px #686565;
+          box-shadow: 2px 2px 3px 2px #686565;
         }
         .project {
+          padding: 4px;
+          -webkit-box-shadow: 2px 2px 3px 2px #686565;
+          box-shadow: 2px 2px 3px 2px #686565;
           font-size: 1.8em;
           color: rgb(42, 101, 190);
           letter-spacing: 2px;
@@ -104,8 +114,10 @@
             justify-content: center;
             h1 {
               font-size: 1.2rem;
-              padding: 0.5rem 0;
-              color: rgb(62, 63, 62);
+              padding: 0.5rem 8px;
+              color: rgb(122, 52, 52);
+              -webkit-box-shadow: inset 0px 0px 2px 2px #916d6d;
+              box-shadow: inset 0px 0px 2px 2px #916d6d;
             }
           }
 
@@ -116,10 +128,11 @@
               margin-left: 3%;
               font-size: 0.95rem;
               font-weight: 600;
+              color: rgb(54, 56, 54);
             }
             .github {
               border-radius: 10%;
-              color: rgb(158, 50, 122);
+              color: rgb(43, 102, 36);
             }
           }
         }

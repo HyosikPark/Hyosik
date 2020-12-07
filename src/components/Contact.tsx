@@ -1,7 +1,69 @@
-import React from 'react';
+import React, { useCallback, useRef } from 'react';
 import './Contact.scss';
+import emailjs from 'emailjs-com';
+
+const toastMessage = (elem: React.RefObject<HTMLDivElement>) => {
+  if (elem.current !== null) {
+    elem.current.style.display = 'block';
+  }
+
+  setTimeout(() => {
+    if (elem.current !== null) {
+      elem.current.style.opacity = '1';
+      elem.current.style.transform = 'translateY(-50%)';
+    }
+  }, 50);
+
+  setTimeout(() => {
+    if (elem.current !== null) {
+      elem.current.style.transform = 'translateY(-120%)';
+      elem.current.style.opacity = '0';
+    }
+  }, 4000);
+  setTimeout(() => {
+    if (elem.current !== null) {
+      elem.current.style.display = 'none';
+      elem.current.style.transform = 'translateY(0%)';
+    }
+  }, 5000);
+};
 
 const Contact = () => {
+  const successDiv = useRef<HTMLDivElement>(null);
+  const failDiv = useRef<HTMLDivElement>(null);
+  const submitBtn = useRef<HTMLButtonElement>(null);
+
+  const sendEmail = useCallback((e) => {
+    e.preventDefault();
+    if (submitBtn.current !== null) {
+      submitBtn.current.disabled = true;
+      submitBtn.current.style.cursor = 'default';
+      submitBtn.current.style.background = '#b3b1af';
+    }
+    emailjs
+      .sendForm(
+        'service_cmghvnp',
+        'template_pget8bi',
+        e.target,
+        'user_BF4RpGzwKQCQ7HMywX4td'
+      )
+      .then(
+        () => {
+          toastMessage(successDiv);
+        },
+        () => {
+          toastMessage(failDiv);
+          setTimeout(() => {
+            if (submitBtn.current !== null) {
+              submitBtn.current.disabled = false;
+              submitBtn.current.style.cursor = 'pointer';
+              submitBtn.current.style.background = '#faeedf';
+            }
+          }, 2000);
+        }
+      );
+  }, []);
+
   return (
     <>
       <div className='contact-cover'>
@@ -38,11 +100,7 @@ const Contact = () => {
             </ul>
           </div>
           <div className='send-email'>
-            <form
-              className='gform'
-              method='POST'
-              action='https://script.google.com/macros/s/AKfycbxciry4McykOZFMc7ZNlvUywGgLekhRq5H4V992Yw/exec'
-            >
+            <form onSubmit={sendEmail}>
               <ul>
                 <li>
                   <label htmlFor='name'>
@@ -92,11 +150,17 @@ const Contact = () => {
                     required
                   ></textarea>
                 </li>
-                <button>Submit</button>
+
+                <button ref={submitBtn}>Submit</button>
               </ul>
-              <div style={{ display: 'none' }} className='thankyou_message'>
-                <div className='toast-message'>
-                  <p>The mail has been sent successfully</p>
+              <div className='success_message message' ref={successDiv}>
+                <div className='toast-success'>
+                  <p>The message has been sent successfully</p>
+                </div>
+              </div>
+              <div className='fail_message message' ref={failDiv}>
+                <div className='toast-fail'>
+                  <p>Failed to send message.</p>
                 </div>
               </div>
             </form>

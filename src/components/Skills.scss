@@ -1,5 +1,8 @@
 @import './mediaquery/MediaQuery';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .skills-cover {
+  font-family: 'Roboto Slab', serif;
   position: absolute;
   top: 0;
   width: 100vw;

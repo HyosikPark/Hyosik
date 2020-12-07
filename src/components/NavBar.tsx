@@ -7,8 +7,7 @@ const NavBar = () => {
   const [sideBar, setSideBar] = useState(false);
   const [changeClassName, setChangeClassName] = useState(false);
   const [Circle, setCircle] = useState({
-    home: pathname === '/' ? true : false,
-    about: pathname === '/about' ? true : false,
+    about: pathname === '/' ? true : false,
     skills: pathname === '/skills' ? true : false,
     project: pathname === '/project' ? true : false,
     contact: pathname === '/contact' ? true : false,
@@ -16,7 +15,6 @@ const NavBar = () => {
 
   const displayCircle = useCallback((e) => {
     setCircle({
-      home: false,
       about: false,
       skills: false,
       project: false,
@@ -58,17 +56,13 @@ const NavBar = () => {
       <ul
         onClick={closeSideBar}
         className={changeClassName ? 'sidebar' : 'nav-list'}
-        style={sideBar ? { height: '40vh' } : undefined}
+        style={
+          sideBar
+            ? { height: '250px', border: '3px solid rgb(197, 190, 187)' }
+            : undefined
+        }
       >
         <Link to='/'>
-          <li className='home' onClick={displayCircle}>
-            Home
-            {Circle.home && (
-              <img className='red-circle' src='./img/red-circle.png' alt='' />
-            )}
-          </li>
-        </Link>
-        <Link to='/about'>
           <li className='about' onClick={displayCircle}>
             About
             {Circle.about && (

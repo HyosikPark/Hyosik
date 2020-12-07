@@ -226,27 +226,33 @@
         button {
           margin-top: 1rem;
           padding: 0.7rem 1rem;
-          background: #f3e5d4;
+          background: #faeedf;
           -webkit-box-shadow: 2px 2px 3px 2px #a18080;
           box-shadow: 1px 1px 0px 2px #806262;
           font-weight: 900;
-          color: #5c5151;
+          color: #775d5d;
           border-radius: 8%;
           border: 1px;
           cursor: pointer;
         }
       }
     }
-    .thankyou_message {
+    .message {
       position: absolute;
       right: 10%;
       padding: 2%;
       border: 3px solid rgb(122, 105, 48);
       background-color: rgba(150, 147, 138, 0.2);
       border-radius: 5%;
-      transition: display 0.5s;
-      .toast-message {
+      transition: all 1s;
+      display: none;
+      opacity: 0;
+      .toast-success {
         color: rgb(5, 92, 5);
+        font-weight: 900;
+      }
+      .toast-fail {
+        color: rgb(139, 28, 33);
         font-weight: 900;
       }
     }
