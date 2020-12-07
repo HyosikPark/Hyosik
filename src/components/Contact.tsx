@@ -88,7 +88,10 @@ const Contact = () => {
             <h1>INFOMATION</h1>
             <ul>
               <li className='address'>
-                <img src='/img/film.svg' alt='' />
+                <img
+                  src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365471/film_taf3tl.svg'
+                  alt=''
+                />
                 <h3>ADDRESS</h3>
                 <p>
                   61, Daecheon-ro 103beon-gil, Haeundae-gu, <br /> Busan,
@@ -96,13 +99,19 @@ const Contact = () => {
                 </p>
               </li>
               <li className='site-info'>
-                <img src='/img/film.svg' alt='' />
+                <img
+                  src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365471/film_taf3tl.svg'
+                  alt=''
+                />
                 <h4>
                   <a href='mailto:hyosik.dev@gmail.com'>hyosik.dev@gmail.com</a>
                 </h4>
               </li>
               <li className='contact-info'>
-                <img src='/img/film.svg' alt='' />
+                <img
+                  src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365471/film_taf3tl.svg'
+                  alt=''
+                />
                 <p>+82-10-6660-1482</p>
               </li>
             </ul>

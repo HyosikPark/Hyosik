@@ -15,7 +15,7 @@ const Project = () => {
           <article className='portfolio'>
             <a
               className='portfolio-img link'
-              href='https://www.youtube.com/watch?v=rCCijOgaG7w&t=3s'
+              href='https://hyosikpark.github.io/Hyosik/'
               target='_blank'
               rel='noreferrer'
             >
@@ -30,7 +30,7 @@ const Project = () => {
               </div>
               <div className='project-title'>
                 <a
-                  href='https://www.youtube.com/watch?v=rCCijOgaG7w&t=3s'
+                  href='https://hyosikpark.github.io/Hyosik/'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -43,7 +43,7 @@ const Project = () => {
                   code:{' '}
                   <a
                     className='shoppingmall-github github'
-                    href='https://github.com/HyosikPark/portfolio/tree/shoppingmall'
+                    href='https://github.com/HyosikPark/Hyosik'
                     target='_blank'
                     rel='noreferrer'
                   >
