@@ -7,7 +7,7 @@ const NavBar = () => {
   const [sideBar, setSideBar] = useState(false);
   const [changeClassName, setChangeClassName] = useState(false);
   const [Circle, setCircle] = useState({
-    about: pathname === '/Hyosik' ? true : false,
+    about: pathname === '/Hyosik/' ? true : false,
     skills: pathname === '/Hyosik/skills' ? true : false,
     project: pathname === '/Hyosik/project' ? true : false,
     contact: pathname === '/Hyosik/contact' ? true : false,
@@ -62,7 +62,7 @@ const NavBar = () => {
             : undefined
         }
       >
-        <Link to='/Hyosik'>
+        <Link to='/Hyosik/'>
           <li className='about' onClick={displayCircle}>
             About
             {Circle.about && (
