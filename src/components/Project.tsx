@@ -19,7 +19,10 @@ const Project = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <img src='./img/portfolio-site.png' alt='' />
+              <img
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365473/portfolio-site_sxdcld.png'
+                alt=''
+              />
             </a>
             <div className='shoppingmall-info content'>
               <div className='project-date'>
@@ -57,7 +60,10 @@ const Project = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <img src='./img/recent-post.png' alt='' />
+              <img
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365473/recent-post_amvcnz.png'
+                alt=''
+              />
             </a>
             <div className='recentpost-info content'>
               <div className='project-date'>
@@ -95,7 +101,10 @@ const Project = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <img src='./img/shoppingmall.png' alt='' />
+              <img
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365474/shoppingmall_s6b021.png'
+                alt=''
+              />
             </a>
             <div className='shoppingmall-info content'>
               <div className='project-date'>

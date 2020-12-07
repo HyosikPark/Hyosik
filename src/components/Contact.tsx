@@ -69,8 +69,16 @@ const Contact = () => {
       <div className='contact-cover'>
         <div className='contact-container'>
           <div className='info-head'>
-            <img className='right' src='./img/writinghand.png' alt='' />
-            <img className='left' src='./img/letter.png' alt='' />
+            <img
+              className='right'
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365475/writinghand_hugzw5.png'
+              alt=''
+            />
+            <img
+              className='left'
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/letter_v7trkb.png'
+              alt=''
+            />
             <div className='info-contact'>
               <p className='get-in-touch'>GET IN TOUCH</p>
               <p className='contact'>CONTACT</p>

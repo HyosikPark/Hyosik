@@ -18,10 +18,10 @@ const App = () => {
             <TransitionGroup>
               <CSSTransition classNames='fade' timeout={500} key={location.key}>
                 <Switch location={location}>
-                  <Route path='/' exact component={About} />
-                  <Route path='/skills' component={Skills} />
-                  <Route path='/project' component={Project} />
-                  <Route path='/contact' component={Contact} />
+                  <Route path='/Hyosik' exact component={About} />
+                  <Route path='/Hyosik/skills' component={Skills} />
+                  <Route path='/Hyosik/project' component={Project} />
+                  <Route path='/Hyosik/contact' component={Contact} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

@@ -19,7 +19,10 @@ const About = () => {
               Who Am <span>I?</span>
             </h1>
           </div>
-          <img src='./img/color3.png' alt='' />
+          <img
+            src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/color3_arwiwf.png'
+            alt=''
+          />
         </div>
         <div className='info-text'>
           <div className='introduce'>
@@ -38,13 +41,25 @@ const About = () => {
               people. Please Contact Me!
             </p>
           </div>
-          <img className='drawing-man' src='./img/drawing-man.png' alt='' />
+          <img
+            className='drawing-man'
+            src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/drawing-man_p2bgqx.png'
+            alt=''
+          />
         </div>
         <div className='site-info'>
           <div className='tech-site'>
             <h1 className='tech-blog'>
-              <img className='water-drop1' src='./img/water-drop.png' alt='' />
-              <img className='water-drop2' src='./img/water-drop.png' alt='' />
+              <img
+                className='water-drop1'
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365475/water-drop_ovmkwf.png'
+                alt=''
+              />
+              <img
+                className='water-drop2'
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365475/water-drop_ovmkwf.png'
+                alt=''
+              />
               <a
                 href='https://velog.io/@gytlr01'
                 target='_blank'

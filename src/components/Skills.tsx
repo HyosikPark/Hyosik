@@ -12,11 +12,17 @@ const Skills = () => {
           </div>
         </div>
         <div className='flower-img'>
-          <img src='./img/book.png' alt='' />
+          <img
+            src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365471/book_lemwfl.png'
+            alt=''
+          />
         </div>
         <div className='kind-of-skill'>
           <article className='html'>
-            <img src='./img/html5.png' alt='' />
+            <img
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/html5_yi56ht.png'
+              alt=''
+            />
             <div className='html content'>
               <h1>HTML</h1>
               <h3>URL History</h3>
@@ -25,7 +31,10 @@ const Skills = () => {
             </div>
           </article>
           <article className='sass'>
-            <img src='./img/sass.png' alt='' />
+            <img
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365474/sass_w2d1jb.png'
+              alt=''
+            />
             <div className='sass content'>
               <h1>SCSS</h1>
               <h3>Grid Flex</h3>
@@ -34,8 +43,15 @@ const Skills = () => {
             </div>
           </article>
           <article className='javascript'>
-            <img className='sitting-man' src='./img/sitting-man.svg' alt='' />
-            <img src='./img/javascript.png' alt='' />
+            <img
+              className='sitting-man'
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365475/sitting-man_n9cggo.svg'
+              alt=''
+            />
+            <img
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/javascript_vxtbj8.png'
+              alt=''
+            />
             <div className='javascript content'>
               <h1>Javascript</h1>
               <h4>Execution Context This</h4>
@@ -45,7 +61,10 @@ const Skills = () => {
             </div>
           </article>
           <article className='typescript'>
-            <img src='./img/typescript.png' alt='' />
+            <img
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365475/typescript_cstunu.png'
+              alt=''
+            />
             <div className='typescript content'>
               <h1>Typescript</h1>
               <h4>Interface Type Aliases</h4>
@@ -55,7 +74,10 @@ const Skills = () => {
             </div>
           </article>
           <article className='react'>
-            <img src='./img/react.png' alt='' />
+            <img
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365474/react_lfpfuq.png'
+              alt=''
+            />
             <div className='react content'>
               <h1>React</h1>
               <h3>Hook</h3>
@@ -65,7 +87,10 @@ const Skills = () => {
             </div>
           </article>
           <article className='node'>
-            <img src='./img/node.png' alt='' />
+            <img
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365473/node_tznefb.png'
+              alt=''
+            />
             <div className='node content'>
               <h1>Node JS</h1>
               <h3>Express</h3>
@@ -73,7 +98,10 @@ const Skills = () => {
             </div>
           </article>
           <article className='webpack'>
-            <img src='./img/webpack.png' alt='' />
+            <img
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365475/webpack_sgjncr.png'
+              alt=''
+            />
             <div className='webpack content'>
               <h1>Webpack</h1>
               <h3>Babel</h3>
@@ -82,7 +110,10 @@ const Skills = () => {
             </div>
           </article>
           <article className='git'>
-            <img src='./img/git.png' alt='' />
+            <img
+              src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365471/git_x7lkum.png'
+              alt=''
+            />
             <div className='git content'>
               <h1>Git</h1>
               <h4>Commit Status</h4>

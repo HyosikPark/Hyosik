@@ -7,10 +7,10 @@ const NavBar = () => {
   const [sideBar, setSideBar] = useState(false);
   const [changeClassName, setChangeClassName] = useState(false);
   const [Circle, setCircle] = useState({
-    about: pathname === '/' ? true : false,
-    skills: pathname === '/skills' ? true : false,
-    project: pathname === '/project' ? true : false,
-    contact: pathname === '/contact' ? true : false,
+    about: pathname === '/Hyosik' ? true : false,
+    skills: pathname === '/Hyosik/skills' ? true : false,
+    project: pathname === '/Hyosik/project' ? true : false,
+    contact: pathname === '/Hyosik/contact' ? true : false,
   });
 
   const displayCircle = useCallback((e) => {
@@ -62,39 +62,59 @@ const NavBar = () => {
             : undefined
         }
       >
-        <Link to='/'>
+        <Link to='/Hyosik'>
           <li className='about' onClick={displayCircle}>
             About
             {Circle.about && (
-              <img className='red-circle' src='./img/red-circle.png' alt='' />
+              <img
+                className='red-circle'
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365474/red-circle_s7ksep.png'
+                alt=''
+              />
             )}
           </li>
         </Link>
-        <Link to='/skills'>
+        <Link to='/Hyosik/skills'>
           <li className='skills' onClick={displayCircle}>
             Skills
             {Circle.skills && (
-              <img className='red-circle' src='./img/red-circle.png' alt='' />
+              <img
+                className='red-circle'
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365474/red-circle_s7ksep.png'
+                alt=''
+              />
             )}
           </li>
         </Link>
-        <Link to='/project'>
+        <Link to='/Hyosik/project'>
           <li className='project' onClick={displayCircle}>
             Project
             {Circle.project && (
-              <img className='red-circle' src='./img/red-circle.png' alt='' />
+              <img
+                className='red-circle'
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365474/red-circle_s7ksep.png'
+                alt=''
+              />
             )}
           </li>
         </Link>
-        <Link className='contact-link' to='/contact'>
+        <Link className='contact-link' to='/Hyosik/contact'>
           <li className='contact' onClick={displayCircle}>
             Contact
             {Circle.contact && (
-              <img className='red-circle' src='./img/red-circle.png' alt='' />
+              <img
+                className='red-circle'
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365474/red-circle_s7ksep.png'
+                alt=''
+              />
             )}
           </li>
         </Link>
-        <img className='balloon' src='./img/balloon.png' alt='' />
+        <img
+          className='balloon'
+          src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365470/balloon_kzfrfc.png'
+          alt=''
+        />
       </ul>
       <i
         onClick={toggleSideBar}
