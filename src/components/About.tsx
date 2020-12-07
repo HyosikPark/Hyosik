@@ -1,15 +1,15 @@
 import React from 'react';
 import './About.scss';
-import profilePhoto from '../img/profile1.jpg';
-import colorPaint from '../img/color3.png';
-import drowingMan from '../img/drawing-man.png';
 
 const About = () => {
   return (
     <div className='profile-cover'>
       <div className='profile-container'>
         <div className='profile-img'>
-          <img src={profilePhoto} alt='' />
+          <img
+            src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365474/profile1_ec7mch.jpg'
+            alt=''
+          />
         </div>
 
         <div className='info-head'>
@@ -19,7 +19,7 @@ const About = () => {
               Who Am <span>I?</span>
             </h1>
           </div>
-          <img src={colorPaint} alt='' />
+          <img src='./img/color3.png' alt='' />
         </div>
         <div className='info-text'>
           <div className='introduce'>
@@ -38,7 +38,7 @@ const About = () => {
               people. Please Contact Me!
             </p>
           </div>
-          <img className='drawing-man' src={drowingMan} alt='' />
+          <img className='drawing-man' src='./img/drawing-man.png' alt='' />
         </div>
         <div className='site-info'>
           <div className='tech-site'>
