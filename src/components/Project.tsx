@@ -35,7 +35,7 @@ const Project = () => {
                 </a>
               </div>
               <div className='stack-code'>
-                <p>React, Typescript</p>
+                <p>React, Typescript, SCSS</p>
                 <p>
                   code:{' '}
                   <a
