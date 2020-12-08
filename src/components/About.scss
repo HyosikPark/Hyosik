@@ -126,6 +126,9 @@
           width: 60%;
           right: 20%;
         }
+        @include mobile {
+          top: 30%;
+        }
         p {
           margin-top: 5%;
           text-align: justify;
@@ -162,6 +165,9 @@
         @include tablet {
           font-size: 0.5rem;
         }
+        @include mobile {
+          font-size: 0.4rem;
+        }
         h1 {
           transition: transform 0.5s;
           &:hover {
@@ -174,6 +180,7 @@
             width: 15px;
             height: 15px;
             transform: rotate(90deg);
+            display: none;
           }
           .water-drop2 {
             position: absolute;
@@ -182,6 +189,7 @@
             width: 15px;
             height: 15px;
             transform: rotate(140deg);
+            display: none;
           }
         }
         a {
