@@ -27,7 +27,7 @@ const Skills = () => {
               <h1>HTML</h1>
               <h3>URL History</h3>
               <h3>Fetch Storage</h3>
-              <h3>FormData File</h3>
+              <h3>FormData Worker</h3>
             </div>
           </article>
           <article className='sass'>
