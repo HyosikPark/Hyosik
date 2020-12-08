@@ -63,6 +63,9 @@
         position: absolute;
         left: 6%;
         z-index: 1;
+        @include mobile {
+          top: 7%;
+        }
 
         .about-me {
           font-size: 1.5em;
@@ -127,7 +130,7 @@
           right: 20%;
         }
         @include mobile {
-          top: 30%;
+          top: 25%;
         }
         p {
           margin-top: 5%;
