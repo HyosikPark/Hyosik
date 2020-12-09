@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.scss';
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'Hyosik portfolio | About';
+  }, []);
   return (
     <div className='profile-cover'>
       <div className='profile-container'>

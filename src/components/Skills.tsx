@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Skills.scss';
 
 const Skills = () => {
+  useEffect(() => {
+    document.title = 'Hyosik portfolio | Skills';
+  }, []);
   return (
     <div className='skills-cover'>
       <div className='skills-container'>

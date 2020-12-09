@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import './Contact.scss';
 import emailjs from 'emailjs-com';
 
@@ -62,6 +62,10 @@ const Contact = () => {
           }, 2000);
         }
       );
+  }, []);
+
+  useEffect(() => {
+    document.title = 'Hyosik portfolio | Contact';
   }, []);
 
   return (

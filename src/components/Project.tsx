@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Project.scss';
 
 const Project = () => {
+  useEffect(() => {
+    document.title = 'Hyosik portfolio | Project';
+  }, []);
   return (
     <div className='project-cover'>
       <div className='project-container'>
