@@ -42,8 +42,7 @@ const Project = () => {
               </div>
               <div className='stack-code'>
                 <p>
-                  Next JS, Typescript, SCSS, Mongo DB, GraphQL, Vercel, Amazon
-                  S3
+                  Next JS, Typescript, SCSS, Mongo DB, GraphQL, Vercel, AWS S3
                 </p>
                 <p>
                   code:{' '}
