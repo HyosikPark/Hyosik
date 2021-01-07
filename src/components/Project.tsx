@@ -18,6 +18,50 @@ const Project = () => {
           <article className='portfolio'>
             <a
               className='portfolio-img link'
+              href='https://k-pop-community.vercel.app/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1610040557/community_mafqkb.png'
+                alt=''
+              />
+            </a>
+            <div className='community-info content'>
+              <div className='project-date'>
+                <p>DECEMBER 2020~ | PERSONAL PROJECT |</p>
+              </div>
+              <div className='project-title'>
+                <a
+                  href='https://k-pop-community.vercel.app/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <h1>COMMUNITY (...ing)</h1>
+                </a>
+              </div>
+              <div className='stack-code'>
+                <p>
+                  Next JS, Typescript, SCSS, Mongo DB, GraphQL, Vercel, Amazon
+                  S3
+                </p>
+                <p>
+                  code:{' '}
+                  <a
+                    className='shoppingmall-github github'
+                    href='https://github.com/HyosikPark/community'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    GitHub
+                  </a>{' '}
+                </p>
+              </div>
+            </div>
+          </article>
+          <article className='portfolio'>
+            <a
+              className='portfolio-img link'
               href='https://hyosikpark.github.io/Hyosik/'
               target='_blank'
               rel='noreferrer'

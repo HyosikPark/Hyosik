@@ -96,6 +96,7 @@ const Skills = () => {
             />
             <div className='node content'>
               <h1>Node JS</h1>
+              <h3>Next JS</h3>
               <h3>Express</h3>
               <h3>Mongoose</h3>
             </div>
@@ -106,10 +107,10 @@ const Skills = () => {
               alt=''
             />
             <div className='webpack content'>
-              <h1>Webpack</h1>
-              <h3>Babel</h3>
-              <h3>Loder</h3>
-              <h3>Plugin</h3>
+              <h1>GraphQL</h1>
+              <br />
+              <h3>Apollo-Client</h3>
+              <h3>Apollo-Server</h3>
             </div>
           </article>
           <article className='git'>
