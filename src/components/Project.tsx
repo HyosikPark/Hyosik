@@ -18,7 +18,7 @@ const Project = () => {
           <article className='portfolio'>
             <a
               className='portfolio-img link'
-              href='https://k-community.vercel.app/'
+              href='https://biaskpop.com/'
               target='_blank'
               rel='noreferrer'
             >
@@ -33,7 +33,7 @@ const Project = () => {
               </div>
               <div className='project-title'>
                 <a
-                  href='https://k-community.vercel.app/'
+                  href='https://biaskpop.com/'
                   target='_blank'
                   rel='noreferrer'
                 >
