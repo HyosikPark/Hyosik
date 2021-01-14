@@ -30,7 +30,7 @@ const About = () => {
         <div className='info-text'>
           <div className='introduce'>
             <h1 className='profile-name'>Hyosik Park</h1>
-            <h3 className='profile-job'>Front-End Developer</h3>
+            <h3 className='profile-job'>Full-Stack Developer</h3>
             <p>
               Hello, I majored in Nano Mechatronics engineering at Pusan
               National University. I became interested in programming by doing
@@ -38,10 +38,10 @@ const About = () => {
               using React, TypeScript, Node JS and GraphQL. I am studying to
               improve the code through refactoring and to create a fast and
               stable website through careful testing. The goal is to efficiently
-              configure logic on the front end and to design UI/UX creatively.
-              Furthermore, I want to be a full-stack developer who can handle
-              the back-end areas well. I want to communicate and work with good
-              people. Please Contact Me!
+              configure logic and to design UI/UX creatively. Furthermore, I
+              want to be a full-stack developer who can handle the front,
+              back-end well. I want to communicate and work with good people.
+              Please Contact Me!
             </p>
           </div>
           <img
