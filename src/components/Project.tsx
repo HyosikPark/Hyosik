@@ -23,7 +23,7 @@ const Project = () => {
               rel='noreferrer'
             >
               <img
-                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1610040557/community_mafqkb.png'
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1610726690/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C_hasbjb.png'
                 alt=''
               />
             </a>
