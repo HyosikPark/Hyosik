@@ -30,7 +30,7 @@ const About = () => {
         <div className='info-text'>
           <div className='introduce'>
             <h1 className='profile-name'>Hyosik Park</h1>
-            <h3 className='profile-job'>Full-Stack Developer</h3>
+            <h3 className='profile-job'>Front-End Developer</h3>
             <p>
               Hello, I majored in Nano Mechatronics engineering at Pusan
               National University. I became interested in programming by doing
