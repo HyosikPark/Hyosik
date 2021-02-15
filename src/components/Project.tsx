@@ -18,6 +18,47 @@ const Project = () => {
           <article className='portfolio'>
             <a
               className='portfolio-img link'
+              href='https://hyosikpark.github.io/alarm/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img
+                src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1613377446/alarm-app-image_bozohp.png'
+                alt=''
+              />
+            </a>
+            <div className='alarm-info content'>
+              <div className='project-date'>
+                <p>FEBRUARY 2021 | PERSONAL PROJECT |</p>
+              </div>
+              <div className='project-title'>
+                <a
+                  href='https://hyosikpark.github.io/alarm/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <h1>ALARM</h1>
+                </a>
+              </div>
+              <div className='stack-code'>
+                <p>Webpack, Typescript, Babel</p>
+                <p>
+                  code:{' '}
+                  <a
+                    className='shoppingmall-github github'
+                    href='https://github.com/HyosikPark/alarm-app'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    GitHub
+                  </a>{' '}
+                </p>
+              </div>
+            </div>
+          </article>
+          <article className='portfolio'>
+            <a
+              className='portfolio-img link'
               href='https://biaskpop.com/'
               target='_blank'
               rel='noreferrer'
@@ -29,7 +70,7 @@ const Project = () => {
             </a>
             <div className='community-info content'>
               <div className='project-date'>
-                <p>DECEMBER 2020~ | PERSONAL PROJECT |</p>
+                <p>DECEMBER 2020 | PERSONAL PROJECT |</p>
               </div>
               <div className='project-title'>
                 <a
@@ -37,7 +78,7 @@ const Project = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <h1>COMMUNITY (...ing)</h1>
+                  <h1>COMMUNITY</h1>
                 </a>
               </div>
               <div className='stack-code'>
