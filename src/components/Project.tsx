@@ -15,7 +15,7 @@ const Project = () => {
           </div>
         </div>
         <div className='kind-of-project'>
-          <article className='portfolio'>
+          {/* <article className='portfolio'>
             <a
               className='portfolio-img link'
               href='https://hyosikpark.github.io/alarm/'
@@ -55,7 +55,7 @@ const Project = () => {
                 </p>
               </div>
             </div>
-          </article>
+          </article> */}
           <article className='portfolio'>
             <a
               className='portfolio-img link'
