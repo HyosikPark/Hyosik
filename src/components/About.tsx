@@ -16,19 +16,19 @@ const About = () => {
         </div>
 
         <div className='info-head'>
-          <div className='info-about'>
+          <header className='info-about'>
             <h1 className='about-me'>About Me</h1>
             <h1 className='who-am-i'>
               Who Am <span>I?</span>
             </h1>
-          </div>
+          </header>
           <img
             src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/color3_arwiwf.png'
             alt=''
           />
         </div>
         <div className='info-text'>
-          <div className='introduce'>
+          <main className='introduce'>
             <h1 className='profile-name'>Hyosik Park</h1>
             <h3 className='profile-job'>Front-End Developer</h3>
             <p>
@@ -43,14 +43,14 @@ const About = () => {
               back-end well. I want to communicate and work with good people.
               Please Contact Me!
             </p>
-          </div>
+          </main>
           <img
             className='drawing-man'
             src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/drawing-man_p2bgqx.png'
             alt=''
           />
         </div>
-        <div className='site-info'>
+        <footer className='site-info'>
           <div className='tech-site'>
             <h1 className='tech-blog'>
               <img
@@ -83,7 +83,7 @@ const About = () => {
               </a>
             </h1>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
   );

@@ -9,12 +9,12 @@ const Project = () => {
     <div className='project-cover'>
       <div className='project-container'>
         <div className='info-head'>
-          <div className='info-project'>
+          <header className='info-project'>
             <p className='challenge'>CHALLENGE</p>
             <p className='project'>PROJECT</p>
-          </div>
+          </header>
         </div>
-        <div className='kind-of-project'>
+        <main className='kind-of-project'>
           {/* <article className='portfolio'>
             <a
               className='portfolio-img link'
@@ -222,7 +222,7 @@ const Project = () => {
               </div>
             </div>
           </article>
-        </div>
+        </main>
       </div>
     </div>
   );

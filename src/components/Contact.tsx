@@ -83,12 +83,12 @@ const Contact = () => {
               src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/letter_v7trkb.png'
               alt=''
             />
-            <div className='info-contact'>
+            <header className='info-contact'>
               <p className='get-in-touch'>GET IN TOUCH</p>
               <p className='contact'>CONTACT</p>
-            </div>
+            </header>
           </div>
-          <div className='personal-info'>
+          <section className='personal-info'>
             <h1>INFOMATION</h1>
             <ul>
               <li className='address'>
@@ -119,8 +119,8 @@ const Contact = () => {
                 <p>+82-10-6660-1482</p>
               </li>
             </ul>
-          </div>
-          <div className='send-email'>
+          </section>
+          <section className='send-email'>
             <form onSubmit={sendEmail}>
               <ul>
                 <li>
@@ -185,7 +185,7 @@ const Contact = () => {
                 </div>
               </div>
             </form>
-          </div>
+          </section>
         </div>
       </div>
     </>

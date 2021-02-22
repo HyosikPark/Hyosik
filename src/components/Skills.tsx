@@ -9,10 +9,10 @@ const Skills = () => {
     <div className='skills-cover'>
       <div className='skills-container'>
         <div className='info-head'>
-          <div className='info-skills'>
+          <header className='info-skills'>
             <p className='what-i-do'>SKILLS</p>
             <p className='intro-skills'>HERE ARE SOME OF MY SKILLS</p>
-          </div>
+          </header>
         </div>
         <div className='flower-img'>
           <img
@@ -20,7 +20,7 @@ const Skills = () => {
             alt=''
           />
         </div>
-        <div className='kind-of-skill'>
+        <main className='kind-of-skill'>
           <article className='html'>
             <img
               src='https://res.cloudinary.com/dtqpivzyl/image/upload/v1607365472/html5_yi56ht.png'
@@ -126,7 +126,7 @@ const Skills = () => {
               <h4>Reset Revert</h4>
             </div>
           </article>
-        </div>
+        </main>
       </div>
     </div>
   );
