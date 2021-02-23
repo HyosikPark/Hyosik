@@ -84,9 +84,9 @@ const Skills = () => {
             <div className='react content'>
               <h1>React</h1>
               <h3>Hook</h3>
-              <h4>Component Props</h4>
-              <h4>SPA Testing</h4>
-              <h4>Redux</h4>
+              <h4>Router </h4>
+              <h4>Redux, Query</h4>
+              <h4>Next JS</h4>
             </div>
           </article>
           <article className='node'>
@@ -96,7 +96,6 @@ const Skills = () => {
             />
             <div className='node content'>
               <h1>Node JS</h1>
-              <h3>Next JS</h3>
               <h3>Express</h3>
               <h3>Mongoose</h3>
             </div>
